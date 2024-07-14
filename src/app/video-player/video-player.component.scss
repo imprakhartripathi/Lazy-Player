@@ -1,0 +1,65 @@
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5);
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#fileInput {
+    background-color: #E0F7FA;
+    border: 2px solid #00BFFF;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#videoContainer {
+    margin-top: 90px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#videoPlayer {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5);
+    border-radius: 10px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #E0F7FA;
+    border: 2px solid #00BFFF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #00BFFF;
+    color: #FFFFFF;
+}
