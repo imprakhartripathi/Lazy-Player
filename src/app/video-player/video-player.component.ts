@@ -1,12 +1,14 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SidebarComponent } from "../sidebar/sidebar.component";
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-video-player',
   templateUrl: './video-player.component.html',
   styleUrls: ['./video-player.component.scss'],
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule, SidebarComponent, MatIconModule]
 })
 export class VideoPlayerComponent {
   @ViewChild('videoPlayer') videoPlayer!: ElementRef<HTMLVideoElement>;

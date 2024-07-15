@@ -1,0 +1,50 @@
+<div [ngClass]="{'hidden': isSidebarCollapsed && !isSidebarOpen, 'block': !isSidebarCollapsed || isSidebarOpen}"
+     class="fixed inset-y-0 left-0 bg-white w-64 shadow-lg overflow-y-auto z-50">
+  <!-- Sidebar header -->
+  <div class="flex items-left justify-between px-3 py-2 text-[#BB3676]-lg">
+    <div class="text-lg font-semibold"><img src="lazy-player-logo.png" alt="logo">LazyPlayer</div>
+    <!-- Close button (hidden on larger screens) -->
+  </div>
+  <br>
+  <!-- Sidebar content -->
+  <nav class="px-2">
+    <ul class="space-y-2 list-none">
+      <li>
+        <a (click)="navigate('/homepage')" class="flex items-left px-4 py-2 text-gray-700 rounded-lg hover:bg-[#BB3676] hover:text-white">
+          <mat-icon>home</mat-icon> &nbsp;
+          Home
+        </a>
+      </li>
+      <li>
+        <a (click)="navigate('/video-player')" class="flex items-left px-4 py-2 text-gray-700 rounded-lg hover:bg-[#BB3676] hover:text-white">
+          <mat-icon>play_circle</mat-icon> &nbsp;
+          Video Player
+        </a>
+      </li>
+      <li>
+        <a (click)="navigate('/library')" class="flex items-left px-4 py-2 text-gray-700 rounded-lg hover:bg-[#BB3676] hover:text-white">
+          <mat-icon>library_books</mat-icon> &nbsp;
+          Library
+        </a>
+      </li>
+      <hr>
+      <li>
+        <a (click)="logout()" class="flex items-left px-4 py-2 text-gray-700 rounded-lg hover:bg-[#BB3676] hover:text-white">
+          <mat-icon>logout</mat-icon> &nbsp;
+          Logout
+        </a>
+      </li>
+      <!-- Add more menu items as needed -->
+    </ul>
+  </nav>
+</div>
+
+<!-- Mobile toggle button -->
+<button class="sidebar-button" (click)="toggleSidebar()">
+  <svg *ngIf="isSidebarCollapsed" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+  </svg>
+  <svg *ngIf="!isSidebarCollapsed" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+  </svg>
+</button>

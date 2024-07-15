@@ -1,10 +1,11 @@
-<div id="dialog" *ngIf="showDialog">
-    <input type="file" (change)="onFileSelected($event)">
-  </div>
-  <div id="videoContainer" [ngClass]="{'hidden': showDialog}">
+<app-sidebar></app-sidebar>
+<div class="main-container">
+  <div class="heading"><h1>Video Player</h1></div>
+<div id="videoContainer" [ngClass]="{'hidden': showDialog}">
     <video #videoPlayer id="videoPlayer" controls></video>
     <div class="controls">
-      <button (click)="changeMovie()">Change Movie</button>
+      <button (click)="changeMovie()" class="player-button">Change Movie</button>
     </div>
-  </div>
+</div>
+</div>
   
