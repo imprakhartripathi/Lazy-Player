@@ -1,27 +1,81 @@
-# LazyPlayer
+# Lazy Player
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+Lazy Player is a web-based media player built with Angular standalone, allowing users to play media files from their local device or choose from a library of various media. It's a fun project created by [imprakhartripathi](https://github.com/imprakhartripathi) to provide a simple and accessible media player directly in your web browser.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Local Media Playback**: Select and play media files from your computer.
+- **Media Library**: Browse and play media from a curated library.
+- **User-Friendly Interface**: Simple and intuitive controls.
+- **Cross-Platform**: Works on any device with a web browser.
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Check out the [live demo](#) of Lazy Player.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To run Lazy Player locally, follow these steps:
 
-## Running unit tests
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/imprakhartripathi/lazy-player.git
+    cd lazy-player
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Install dependencies**:
+    ```sh
+    npm install
+    ```
 
-## Running end-to-end tests
+3. **Start the development server**:
+    ```sh
+    npm start
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. Open your web browser and navigate to `http://localhost:4200`.
 
-## Further help
+## Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Local Media Playback
+
+1. Click on the "Upload" button.
+2. Select a media file from your computer.
+3. The selected media will start playing automatically.
+
+### Media Library
+
+1. Browse the media library.
+2. Click on a media item to play it.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+
+1. **Fork the repository**.
+2. **Create a new branch**:
+    ```sh
+    git checkout -b feature-name
+    ```
+3. **Make your changes**.
+4. **Commit your changes**:
+    ```sh
+    git commit -m "Add some feature"
+    ```
+5. **Push to the branch**:
+    ```sh
+    git push origin feature-name
+    ```
+6. **Open a pull request**.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Created by [imprakhartripathi](https://github.com/imprakhartripathi) - feel free to contact me!
+
+---
+
+Enjoy using Lazy Player!
