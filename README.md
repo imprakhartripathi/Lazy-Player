@@ -68,10 +68,6 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
     ```
 6. **Open a pull request**.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 Created by [imprakhartripathi](https://github.com/imprakhartripathi) - feel free to contact me!
